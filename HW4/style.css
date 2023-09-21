@@ -1,0 +1,214 @@
+
+.card blockquote p::before {
+    content: "''";
+}
+
+.card blockquote p::after {
+    content: "''";
+}
+
+blockquote {
+    font-size:  25px;
+    color:      white;
+    text-align: center;
+    font-weight: 600;
+}
+
+blockquote {
+    padding-top: 5px ;
+    margin-top:  0px;
+}
+
+.card blockquote > cite {
+    font-style: italic;
+} 
+
+.card {
+    height:           500px;
+    width:            600px;
+    background-color: #0d5825;
+}
+
+.card1,
+.card2,
+.card3 {
+    width:   150px;
+    position: absolute;
+}
+
+.card1 {
+    top: 242px;
+    left: 214px;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform:     rotate(-20deg);
+    transform:         rotate(-20deg);
+    transition:        width 3s, transform 0.5s;
+}
+
+.card2 {
+    top: 250px;
+    left: 250px;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform:     rotate(-4deg);
+    transform:         rotate(-4deg);
+    transition:        width 3s, transform 0.5s;
+}
+
+.card3 {
+    top: 260px;
+    left: 288px;
+    -webkit-transform: rotate(8deg);
+    -ms-transform:     rotate(8deg);
+    transform:         rotate(8deg);
+    transition:        width 3s, transform 0.5s;
+}
+
+.card1:hover {
+    -webkit-transform: translateY(-20px) rotate(-20deg);
+    -ms-transform:     translateY(-20px) rotate(-20deg);
+    transform:         translateY(-20px) rotate(-20deg);
+    cursor: pointer;
+}
+
+.card2:hover {
+    -webkit-transform: translateY(-20px) rotate(-4deg);
+    -ms-transform:     translateY(-20px) rotate(-4deg);
+    transform:         translateY(-20px) rotate(-4deg);
+    cursor: pointer;
+}
+
+.card3:hover {
+    -webkit-transform: translateY(-20px) rotate(8deg);
+    -ms-transform:     translateY(-20px) rotate(8deg);
+    transform:         translateY(-20px) rotate(8deg);
+    cursor: pointer;
+}
+
+.squa {
+  height: 500px;
+  width:  600px;
+}
+
+.squa {
+    margin-top: 24px;
+}
+
+.pink,
+.violet,
+.green  {
+    height:   150px;
+    width:    150px;
+    position: absolute;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.violet {
+    background-color: violet;
+    z-index:          2;
+    left:             80px;
+    top :             680px
+}
+
+.green {
+    background-color: green;
+    left:             150px;
+    top:              800px;
+}  
+
+.menu {
+    height:            300px;
+    width:             300px;
+    background-color:  gray;
+    position:          static;
+    -webkit-transform: translateX(-95%);
+    -ms-transform:     translateX(-95%);
+    transform:         translateX(-95%);
+    transition:        width 4s, transform 1s; 
+
+}
+
+.menu ul,.text {
+    text-transform: uppercase;
+    font-weight:    600;
+    color:          white;
+    padding-top:    40px;
+}
+
+
+.menu ul {
+    padding-top: 40px;
+    list-style-type: none;
+}
+ 
+
+li::before {
+  content: '';
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 0.5rem;
+  background: orange;
+  box-shadow: inset 0 0 0 1px black;
+  transform: rotate(50deg);
+}
+
+
+.menu li:hover {
+    color: orange;
+} 
+
+.menu li {
+    padding-top: 8px;
+}
+
+.text {
+    position: relative;
+    left: 277px;
+    bottom: 113px;
+    opacity: 1;
+    transition: opacity 1s;
+    writing-mode: vertical-lr;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menu:hover {
+    -webkit-transform: translateX(-3%);
+    -ms-transform:     translateX(-3%);
+    transform:         translateX(-3%);
+    transition: width 5s, transform 1s;
+    cursor: pointer;
+}
+
+.menu:hover .text {
+    opacity: 0;
+    
+}
+
+.motion {
+    height:     400px;
+    width:      600px;;
+    margin-top: 20px;
+}
+
+.body {
+    height:                    100px;
+    width:                     100px;
+    background-color:          red;
+    position:                  relative;
+    animation-name:            motion;
+    animation-duration:        5s;
+    animation-iteration-count: infinite
+}
+
+@keyframes motion {
+    0%   {background-color: red;    left: 0px;   top: 0px}
+    25%  {background-color: blue;   left: 0px;   top: 300px;}
+    50%  {background-color: green;  left: 300px; top: 300px;}
+    75%  {background-color: yellow; left: 300px; top: 0px;}
+    100% {background-color: red;    left: 0px;   top: 0px;}
+}

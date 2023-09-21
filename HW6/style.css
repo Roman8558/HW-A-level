@@ -1,0 +1,383 @@
+:root {
+    font-family: Arial, sans-serif;
+    font-size:   16px;
+    font-weight: 1.333333;
+}
+
+html {
+    min-height: 100vh;
+    margin:     0;
+}
+
+body {
+    display:        flex;
+    flex-direction: column;
+    min-height:     100vh;
+    margin:         0;
+}
+
+
+header {
+    background-color: #d3b714;
+    min-height:       100px;
+    display:          flex;
+    align-items:      center;
+    justify-content:  space-between;
+   
+    
+}
+
+main {
+    background-color: beige;
+    display:          flex;
+    flex-grow:        1;
+
+}
+
+footer {
+    display:          flex;
+    justify-content:  center;
+    background-color: #86ec86;
+    height:           40px;
+    align-content:    center;
+    align-items:      center;
+    
+
+}
+ 
+aside {
+    flex-basis:       210px;
+    flex-shrink:      0;
+    background-color: #c798b9;
+    text-align:        center;
+}
+
+main aside:first-of-type {
+    order:            -1;
+    background-color: bisque;
+}
+
+.img1 .img1 {
+    height: 60px;
+}
+
+.img1 {
+    margin-left: 10px;
+}
+
+.menu__item {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    transform: none;
+    transition: none;
+}
+
+input {
+    opacity: 0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display:         flex;
+    font-weight:     600;
+}
+
+.menu__box li {
+    padding: 0px 8px 0px 0px;
+}
+
+.menu__box {
+    padding: 0;
+    margin:  0;
+}
+
+.menu__item:hover {
+  color: white;
+}
+
+.card li {
+    list-style-type: none;
+    width:           31%;
+    margin:          6px;
+    padding:         8px 0 8px;
+    border-radius:   22px;
+    border-style:    solid;
+    border-color:    #9E9E9E;
+    border-width:    1px;
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: space-between;   
+    
+}
+
+.card {
+    display:         flex;
+    flex-direction:  row;
+    justify-content: space-around;
+    padding:         0;
+    flex-wrap:       wrap;
+    justify-content: center;
+}
+
+
+section {
+    display:         flex;
+    flex-direction:  column;
+    justify-content: start;
+    flex-grow:       1;
+}
+
+
+
+section p,h1 {
+    text-align: center;
+}
+
+section h1 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+.lem {
+    height:        76px;
+    width:         90px;
+    border-radius: 50%;
+    border-style:  solid;
+    border-color:  #9E9E9E;
+    border-width:  10px;
+}
+
+.card1 h4,
+.card2 h4,
+.card3 h4,
+.card4 h4,
+.card5 h4,
+.card6 h4 {
+    margin:     8px 8px 0px;
+    text-align: center;
+}
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p {
+    margin:     8px 8px 0px;
+    text-align: center;
+    flex-grow:  1;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button,
+.card6 button {
+    margin:           8px;
+    bottom:           0px;
+    background-color: #695275;
+    color:            white;
+    font-size:        16px;
+    padding:          2px 18px;
+    border-radius:    25px;
+    border:           0;
+    text-transform:   capitalize;
+}
+
+button:hover {
+    padding:          2px 26px;
+    cursor:           pointer;
+    background-color: #1f972f;
+    
+}
+
+.card li:hover {
+    cursor:       pointer;
+    width:        31%;
+    box-shadow:   4px 4px 8px #9E9E9E;
+    border-color: #1f972f;
+    transition:   0.4s;
+    transform:    scale(1.02);
+} 
+
+@media(max-width: 1200px) {
+    aside {
+        flex-basis: 160px;
+    }
+
+    
+}
+
+
+@media(max-width: 1025px) {
+
+aside {
+    flex-basis: 115px;
+}
+
+.lem {
+    height: 69px;
+    width: 81px;
+    border-width: 7px;
+}
+
+.img1 .img1 {
+    height: 45px;
+}
+
+.card1 p, 
+.card2 p, 
+.card3 p, 
+.card4 p, 
+.card5 p, 
+.card6 p  {
+    font-size: 14px;
+
+}
+
+}
+
+
+@media(max-width: 835px) {
+
+
+    span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: absolute;
+        top: 34px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 1;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+ 
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+     transform: rotate(45deg);
+    } 
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+      
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+      
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        right: 0;
+        flex-direction: column
+    }
+
+    
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+
+
+   .card li {
+    width: 45%;
+   }
+
+   aside {
+    font-size: 14px;
+   }
+
+    header {
+     min-height: 80px;
+    }
+
+    .img1 .img1 {
+        height: 40px;
+    }
+
+    .menu__btn {
+        top: 27px;
+    }
+
+    .menu__box {
+        width: 260px;
+    }
+
+}
+
+
+

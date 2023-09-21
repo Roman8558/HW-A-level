@@ -1,0 +1,53 @@
+:root {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.333333;
+}
+
+.box1,
+.box2 {
+    height: 40px;
+    width:  120px;
+    border: solid 4px rebeccapurple;
+    margin: 5px;
+    text-align: center;
+}
+
+.box1 {
+    box-sizing: border-box;
+}
+
+.box2 {
+    box-sizing: content-box;
+}
+
+.box3 {
+    box-sizing:       border-box;
+    width:            350px;
+    height:           220px;
+    padding:          15px 10px 20px;
+    margin-bottom:    30px;
+    border:           dashed 2px red;
+    background-color: green;
+}
+
+.text:after {
+    content: "";
+    display: table;
+    clear:   both;
+}
+
+.img1 {
+    float:  left;
+    margin: 0px 20px 20px 0;
+}
+
+.img2 {
+    float:  right;
+    width:  200px;
+    height: 100px;
+    margin: 20px 20px 20px 20px;
+}
+ .text p {
+    text-align: justify;
+ }
